@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8B251058-DCFC-47F3-8F7F-6B5E1D2BB930}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>Proyecto2BD.My.MyApplication</StartupObject>
+    <RootNamespace>Proyecto2BD</RootNamespace>
+    <AssemblyName>Proyecto2BD</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>Proyecto2BD.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>Proyecto2BD.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActAerolineas.Designer.vb">
+      <DependentUpon>ActAerolineas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActAerolineas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActHoteles.Designer.vb">
+      <DependentUpon>ActHoteles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActHoteles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActLugares.Designer.vb">
+      <DependentUpon>ActLugares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActLugares.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActRutas.Designer.vb">
+      <DependentUpon>ActRutas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActRutas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActTours.Designer.vb">
+      <DependentUpon>ActTours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActTours.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActViajeros.Designer.vb">
+      <DependentUpon>ActViajeros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActViajeros.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActViajes.Designer.vb">
+      <DependentUpon>ActViajes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActViajes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComprarBoleto.Designer.vb">
+      <DependentUpon>ComprarBoleto.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ComprarBoleto.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultarAerolineas.Designer.vb">
+      <DependentUpon>ConsultarAerolineas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarAerolineas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultarHoteles.Designer.vb">
+      <DependentUpon>ConsultarHoteles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarHoteles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultarLugares.Designer.vb">
+      <DependentUpon>ConsultarLugares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarLugares.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultarRutas.Designer.vb">
+      <DependentUpon>ConsultarRutas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarRutas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultarTours.Designer.vb">
+      <DependentUpon>ConsultarTours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarTours.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultarViajeros.Designer.vb">
+      <DependentUpon>ConsultarViajeros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarViajeros.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultarViajes.Designer.vb">
+      <DependentUpon>ConsultarViajes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultarViajes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarAerolineas.Designer.vb">
+      <DependentUpon>EliminarAerolineas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarAerolineas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarHoteles.Designer.vb">
+      <DependentUpon>EliminarHoteles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarHoteles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarLugares.Designer.vb">
+      <DependentUpon>EliminarLugares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarLugares.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarRutas.Designer.vb">
+      <DependentUpon>EliminarRutas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarRutas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarTours.Designer.vb">
+      <DependentUpon>EliminarTours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarTours.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarViajeros.Designer.vb">
+      <DependentUpon>EliminarViajeros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarViajeros.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarViajes.Designer.vb">
+      <DependentUpon>EliminarViajes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarViajes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InsertarAerolineas.Designer.vb">
+      <DependentUpon>InsertarAerolineas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarAerolineas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertarHoteles.Designer.vb">
+      <DependentUpon>InsertarHoteles.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarHoteles.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertarLugares.Designer.vb">
+      <DependentUpon>InsertarLugares.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarLugares.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertarRutas.Designer.vb">
+      <DependentUpon>InsertarRutas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarRutas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertarTours.Designer.vb">
+      <DependentUpon>InsertarTours.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarTours.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertarViajeros.Designer.vb">
+      <DependentUpon>InsertarViajeros.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarViajeros.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InsertarViajes.Designer.vb">
+      <DependentUpon>InsertarViajes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InsertarViajes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login.designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActAerolineas.resx">
+      <DependentUpon>ActAerolineas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActHoteles.resx">
+      <DependentUpon>ActHoteles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActLugares.resx">
+      <DependentUpon>ActLugares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActRutas.resx">
+      <DependentUpon>ActRutas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActTours.resx">
+      <DependentUpon>ActTours.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActViajeros.resx">
+      <DependentUpon>ActViajeros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActViajes.resx">
+      <DependentUpon>ActViajes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ComprarBoleto.resx">
+      <DependentUpon>ComprarBoleto.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarAerolineas.resx">
+      <DependentUpon>ConsultarAerolineas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarHoteles.resx">
+      <DependentUpon>ConsultarHoteles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarLugares.resx">
+      <DependentUpon>ConsultarLugares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarRutas.resx">
+      <DependentUpon>ConsultarRutas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarTours.resx">
+      <DependentUpon>ConsultarTours.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarViajeros.resx">
+      <DependentUpon>ConsultarViajeros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultarViajes.resx">
+      <DependentUpon>ConsultarViajes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarAerolineas.resx">
+      <DependentUpon>EliminarAerolineas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarHoteles.resx">
+      <DependentUpon>EliminarHoteles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarLugares.resx">
+      <DependentUpon>EliminarLugares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarRutas.resx">
+      <DependentUpon>EliminarRutas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarTours.resx">
+      <DependentUpon>EliminarTours.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarViajeros.resx">
+      <DependentUpon>EliminarViajeros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarViajes.resx">
+      <DependentUpon>EliminarViajes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarAerolineas.resx">
+      <DependentUpon>InsertarAerolineas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarHoteles.resx">
+      <DependentUpon>InsertarHoteles.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarLugares.resx">
+      <DependentUpon>InsertarLugares.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarRutas.resx">
+      <DependentUpon>InsertarRutas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarTours.resx">
+      <DependentUpon>InsertarTours.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarViajeros.resx">
+      <DependentUpon>InsertarViajeros.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InsertarViajes.resx">
+      <DependentUpon>InsertarViajes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>

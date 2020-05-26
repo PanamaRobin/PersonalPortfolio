@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body
+{
+    font-family: 'Poppins', sans-serif;
+    background: hsl(0, 0%, 98%);
+}
+
+h1
+{
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+p
+{
+
+}
+
+#greeting
+{   
+    color: white;
+    margin-top: 100px;
+    margin-left: 50px;
+    margin-bottom: 100px;
+}
+
+#first-section
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: url("https://directlinedev.com/media/services/service/background/background_11.wide.jpeg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+}
+
+.navbar
+{
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: hsl(241, 100, 12) !important;
+}

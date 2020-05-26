@@ -1,0 +1,424 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4E23C293-C19F-4EF2-AF0E-BEFEDC865C8A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <StartupObject>AgenciaDeAutosBDII.My.MyApplication</StartupObject>
+    <RootNamespace>AgenciaDeAutosBDII</RootNamespace>
+    <AssemblyName>AgenciaDeAutosBDII</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <MyType>WindowsForms</MyType>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <DefineDebug>true</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DocumentationFile>AgenciaDeAutosBDII.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <DefineDebug>false</DefineDebug>
+    <DefineTrace>true</DefineTrace>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DocumentationFile>AgenciaDeAutosBDII.xml</DocumentationFile>
+    <NoWarn>42016,41999,42017,42018,42019,42032,42036,42020,42021,42022</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionExplicit>On</OptionExplicit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionCompare>Binary</OptionCompare>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionStrict>Off</OptionStrict>
+  </PropertyGroup>
+  <PropertyGroup>
+    <OptionInfer>On</OptionInfer>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Net.Http" />
+  </ItemGroup>
+  <ItemGroup>
+    <Import Include="Microsoft.VisualBasic" />
+    <Import Include="System" />
+    <Import Include="System.Collections" />
+    <Import Include="System.Collections.Generic" />
+    <Import Include="System.Data" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Diagnostics" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Linq" />
+    <Import Include="System.Xml.Linq" />
+    <Import Include="System.Threading.Tasks" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActAccidentes.Designer.vb">
+      <DependentUpon>ActAccidentes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActAccidentes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActAutos.Designer.vb">
+      <DependentUpon>ActAutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActAutos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActConductores.Designer.vb">
+      <DependentUpon>ActConductores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActConductores.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActMultas.Designer.vb">
+      <DependentUpon>ActMultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActMultas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ActTenencia.Designer.vb">
+      <DependentUpon>ActTenencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ActTenencia.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AgenciaDeSegurosDataSet.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgenciaDeSegurosDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaDeSegurosDataSet1.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgenciaDeSegurosDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="AgenciaDeSegurosDataSet2.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>AgenciaDeSegurosDataSet2.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAccidente.Designer.vb">
+      <DependentUpon>ConsultaAccidente.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAccidente.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultaAccidenteLugar.Designer.vb">
+      <DependentUpon>ConsultaAccidenteLugar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAccidenteLugar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultaAccidenteRef.Designer.vb">
+      <DependentUpon>ConsultaAccidenteRef.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaAccidenteRef.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultaMulta.Designer.vb">
+      <DependentUpon>ConsultaMulta.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaMulta.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultaMultaLugar.Designer.vb">
+      <DependentUpon>ConsultaMultaLugar.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaMultaLugar.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultaMultaRef.Designer.vb">
+      <DependentUpon>ConsultaMultaRef.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaMultaRef.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ConsultaTenencia.Designer.vb">
+      <DependentUpon>ConsultaTenencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="ConsultaTenencia.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarAccidentes.Designer.vb">
+      <DependentUpon>EliminarAccidentes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarAccidentes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarAutos.Designer.vb">
+      <DependentUpon>EliminarAutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarAutos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarConductores.Designer.vb">
+      <DependentUpon>EliminarConductores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarConductores.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarMultas.Designer.vb">
+      <DependentUpon>EliminarMultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarMultas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="EliminarTenencia.Designer.vb">
+      <DependentUpon>EliminarTenencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="EliminarTenencia.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Form1.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.vb">
+      <DependentUpon>Form1.vb</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InvolucradosAccidentes.Designer.vb">
+      <DependentUpon>InvolucradosAccidentes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvolucradosAccidentes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="InvolucradosMultas.Designer.vb">
+      <DependentUpon>InvolucradosMultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="InvolucradosMultas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.vb">
+      <DependentUpon>Login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Module1.vb" />
+    <Compile Include="My Project\AssemblyInfo.vb" />
+    <Compile Include="My Project\Application.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Resources.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="My Project\Settings.Designer.vb">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <Compile Include="RegistarAutos.Designer.vb">
+      <DependentUpon>RegistarAutos.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistarAutos.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegistrarAccidentes.Designer.vb">
+      <DependentUpon>RegistrarAccidentes.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarAccidentes.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegistrarConductores.Designer.vb">
+      <DependentUpon>RegistrarConductores.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarConductores.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegistrarMultas.Designer.vb">
+      <DependentUpon>RegistrarMultas.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarMultas.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="RegistrarTenencia.Designer.vb">
+      <DependentUpon>RegistrarTenencia.vb</DependentUpon>
+    </Compile>
+    <Compile Include="RegistrarTenencia.vb">
+      <SubType>UserControl</SubType>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="ActAccidentes.resx">
+      <DependentUpon>ActAccidentes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActAutos.resx">
+      <DependentUpon>ActAutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActConductores.resx">
+      <DependentUpon>ActConductores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActMultas.resx">
+      <DependentUpon>ActMultas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ActTenencia.resx">
+      <DependentUpon>ActTenencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaAccidente.resx">
+      <DependentUpon>ConsultaAccidente.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaAccidenteLugar.resx">
+      <DependentUpon>ConsultaAccidenteLugar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaAccidenteRef.resx">
+      <DependentUpon>ConsultaAccidenteRef.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaMulta.resx">
+      <DependentUpon>ConsultaMulta.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaMultaLugar.resx">
+      <DependentUpon>ConsultaMultaLugar.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaMultaRef.resx">
+      <DependentUpon>ConsultaMultaRef.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ConsultaTenencia.resx">
+      <DependentUpon>ConsultaTenencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarAccidentes.resx">
+      <DependentUpon>EliminarAccidentes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarAutos.resx">
+      <DependentUpon>EliminarAutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarConductores.resx">
+      <DependentUpon>EliminarConductores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarMultas.resx">
+      <DependentUpon>EliminarMultas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EliminarTenencia.resx">
+      <DependentUpon>EliminarTenencia.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvolucradosAccidentes.resx">
+      <DependentUpon>InvolucradosAccidentes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InvolucradosMultas.resx">
+      <DependentUpon>InvolucradosMultas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="My Project\Resources.resx">
+      <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.vb</LastGenOutput>
+      <CustomToolNamespace>My.Resources</CustomToolNamespace>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistarAutos.resx">
+      <DependentUpon>RegistarAutos.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarAccidentes.resx">
+      <DependentUpon>RegistrarAccidentes.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarConductores.resx">
+      <DependentUpon>RegistrarConductores.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarMultas.resx">
+      <DependentUpon>RegistrarMultas.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistrarTenencia.resx">
+      <DependentUpon>RegistrarTenencia.vb</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="AgenciaDeSegurosDataSet.xsc">
+      <DependentUpon>AgenciaDeSegurosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AgenciaDeSegurosDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgenciaDeSegurosDataSet.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgenciaDeSegurosDataSet.xss">
+      <DependentUpon>AgenciaDeSegurosDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="AgenciaDeSegurosDataSet1.xsc">
+      <DependentUpon>AgenciaDeSegurosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AgenciaDeSegurosDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgenciaDeSegurosDataSet1.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgenciaDeSegurosDataSet1.xss">
+      <DependentUpon>AgenciaDeSegurosDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="AgenciaDeSegurosDataSet2.xsc">
+      <DependentUpon>AgenciaDeSegurosDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="AgenciaDeSegurosDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>AgenciaDeSegurosDataSet2.Designer.vb</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="AgenciaDeSegurosDataSet2.xss">
+      <DependentUpon>AgenciaDeSegurosDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="My Project\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <CustomToolNamespace>My</CustomToolNamespace>
+      <LastGenOutput>Settings.Designer.vb</LastGenOutput>
+    </None>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
+</Project>
