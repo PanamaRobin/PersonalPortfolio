@@ -39,5 +39,9 @@ p
 {
     padding-left: 20px;
     padding-right: 20px;
-    background-color: hsl(241, 100, 12) !important;
+}
+
+.bg-custom
+{
+    background-color: #01003E;
 }
