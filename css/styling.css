@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet');
 
 body
 {
@@ -8,13 +8,13 @@ body
 
 h1
 {
-    padding-top: 10px;
-    padding-bottom: 20px;
+    font-weight: 600px !important;
 }
 
-p
+#first-section-title
 {
-
+    padding-top: 10px;
+    padding-bottom: 20px;
 }
 
 #greeting
@@ -44,4 +44,26 @@ p
 .bg-custom
 {
     background-color: #01003E;
+}
+
+#about-me-title-div
+{
+    color: white;
+    text-shadow: 3px 3px 0px rgba(1, 0, 62, 1);
+    margin-left: 50px;
+    padding-left: 15px;
+    background-color: #4DB4C2 !important;
+    padding-top: 8px;
+    padding-bottom: 3px;
+}
+
+#about-me-title-section
+{
+    background-color: #4DB4C2;
+}
+
+#about-me-body-section
+{
+    background-color: #01003E;
+    
 }
