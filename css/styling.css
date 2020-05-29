@@ -8,7 +8,7 @@ body
 
 h1
 {
-    font-weight: 600px !important;
+    font-weight: 600 !important;
 }
 
 #first-section-title
@@ -41,6 +41,16 @@ h1
     padding-right: 20px;
 }
 
+.navbar-brand
+{
+    font-weight: 600 !important;
+}
+
+.navbar-nav
+{
+    font-weight: 500 !important;
+}
+
 .bg-custom
 {
     background-color: #01003E;
@@ -65,5 +75,49 @@ h1
 #about-me-body-section
 {
     background-color: #01003E;
-    
+}
+
+#foto
+{
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    box-shadow: 3px 3px 0px rgba(77, 180, 194, 1);
+}
+
+#image-panel
+{
+    display: flex;
+    justify-content: center !important;
+    align-items: center !important;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#about-me-body-div
+{
+    padding: 50px;
+    display: flex;
+    justify-content: center !important;
+    align-content: center !important;
+}
+
+#about-me-panel
+{
+    box-shadow: 3px 3px 0px rgba(77, 180, 194, 1);
+}
+
+#view-cv-button
+{
+    background: rgba(77, 180, 194, 1);
+    border-color: rgba(77, 180, 194, 1);
+    box-shadow: 0px 3px 3px rgba(36, 59, 63, 0.493);
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.card-text
+{
+    text-align: justify;
+    font-weight: 500;
 }
