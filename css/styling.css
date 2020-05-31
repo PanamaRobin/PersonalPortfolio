@@ -6,6 +6,12 @@ body
     background: hsl(0, 0%, 98%);
 }
 
+.container
+{
+    max-width: 100%;
+    width: 100%;
+}
+
 h1
 {
     font-weight: 600 !important;
