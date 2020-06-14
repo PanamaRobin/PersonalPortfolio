@@ -127,3 +127,17 @@ h1
     text-align: justify;
     font-weight: 500;
 }
+
+#skills-title-div
+{
+    color: #01003E;
+    text-shadow: 3px 3px 0px rgba(77, 180, 194, 1);
+    background-color: white !important;
+    padding-top: 8px;
+    padding-bottom: 3px;
+}
+
+#skills-title-section
+{
+    background-color: white;
+}
