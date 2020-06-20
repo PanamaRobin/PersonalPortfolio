@@ -86,7 +86,7 @@ h1
 #foto
 {
     border-radius: 50%;
-    width: 50%;
+    width: 60%;
     box-shadow: 3px 3px 0px rgba(77, 180, 194, 1);
 }
 
@@ -166,7 +166,9 @@ h1
 
 #skills-hexagons
 {
-    padding: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
     display: flex;
     justify-content: center !important;
     align-content: center !important;
